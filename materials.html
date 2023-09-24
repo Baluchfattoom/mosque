@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Masjid Omar bin Khatwab</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/solid.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/mosque.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="materials.html">MATERIALS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Materials</h1>
+        </section>
+
+        <!------------   -Our Materials------------------->
+        <section class="material">
+            <h1>Our Materials</h1>
+            <p>Our mosque is being crafted with meticulous attention to detail, using a variety of high-quality materials. 
+                <br>Every element is chosen to create a serene and inspiring mosque. Wood, metal, concrete, and sturdy stones are also skillfully incorporated, adding functionality to our mosque designs. 
+                <br>We take pride in the thoughtful selection of materials that reflect both tradition and innovation in our architectural creations.</p>
+                <div class="row">
+                    <div class="material-col">
+                        <img src="images/image2.jpeg">
+                    </div>
+                    <div class="material-col">
+                        <img src="images/sand.jpeg">
+                    </div>
+                    <div class="material-col">
+                        <img src="images/aggregate.jpeg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="material-col">
+                        <img src="images/material.jpeg">
+                    </div>
+                    <div class="material-col">
+                        <img src="images/material1.jpeg">
+                    </div>
+                    <div class="material-col">
+                        <img src="images/material2.jpeg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="material-col">
+                        <img src="images/material3.jpeg">
+                    </div>
+                    <div class="material-col">
+                        <img src="images/material4.jpeg">
+                    </div>
+                    <div class="material-col">
+                        <img src="images/material5.jpeg">
+                    </div>
+                </div>
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter Your Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+        </section>
+
+        <!--------------------Footer----------------------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Each day, we inch closer to creating a sacred space that will not only stand as a symbol of our devotion 
+                <br>but also serve as a beacon of hope and unity for generations to come. 
+            <br>Truly, building this masjid is a labor of love and faith.</p>
+        </section>
+
+        <!-----------Javascript for Toggle menu----------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

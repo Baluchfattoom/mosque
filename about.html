@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Masjid Omar bin Khatwab</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/solid.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/mosque.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="materials.html">MATERIALS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <!------about us content-------------->
+        <section class="about-us">
+            <div class="row">
+            <div class="about-col">
+                <h1>Construction of Omar Bin Khatwab Mosque</h1>
+                <p>The ongoing construction of Omar Bin Khatwab mosque at Kwandomo, Malindi is a testament to our community's dedication and commitment to our faith. 
+                    As we strive to complete this important project, we humbly request your support and financial contributions. 
+                    Your generous funds will play a crucial role in ensuring the successful and timely completion of this mosque, which will serve as a place of worship, learning, and community cohesion. 
+                    By contributing to this noble endeavor, you'll be making a meaningful and lasting impact, honoring our shared values and the spirit of unity at Kwandomo, Malindi</p>
+                    <a href="materials.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpeg">
+            </div>
+        </div>
+        </section>
+
+        <!--------------------Footer----------------------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Each day, we inch closer to creating a sacred space that will not only stand as a symbol of our devotion 
+                <br>but also serve as a beacon of hope and unity for generations to come. 
+            <br>Truly, building this masjid is a labor of love and faith.</p>
+        </section>
+
+        <!-----------Javascript for Toggle menu----------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
